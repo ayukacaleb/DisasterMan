@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Report</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Report a Disaster</h1>
+    <form id="reportForm">
+      <label>Disaster Type:</label>
+      <input type="text" id="type" placeholder="e.g. Flood, Fire" required />
+
+      <label>Severity:</label>
+      <select id="severity" required>
+        <option value="">Select severity</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <label>Message:</label>
+      <textarea id="message" placeholder="Details about the situation..." required></textarea>
+
+      <button type="submit" class="btn">Submit Report</button>
+    </form>
+
+    <a href="dashboard.html" class="btn">Back to Dashboard</a>
+  </div>
+  <form id="reportForm" enctype="multipart/form-data">
+  ...
+  <label>Upload Photo:</label>
+  <input type="file" id="photo" accept="image/*" />
+  ...
+</form>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
